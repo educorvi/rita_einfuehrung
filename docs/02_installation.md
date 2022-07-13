@@ -1,7 +1,7 @@
 # Installation
 Bevor wir nun praktisch versuchen erste Regeln zu schreiben und auszuwerten, müssen wir zunächst Rita aufsetzen. Dafür werden wir den bereits erwähnten Server installieren, der einer REST Api für Rita bereitstellt.
 
-Dies kann entweder mit Docker oder mit einer manuellen Installation geschehen. Nach der Installation wird der Server unter der Adresse http://localohost:3000 aufrufbar sein.
+Dies kann entweder mit Docker oder mit einer manuellen Installation geschehen. Nach der Installation wird der Server unter der Adresse [http://localohost:3000](http://localohost:3000) aufrufbar sein.
 ## Docker
 ### Benötigte Software
 - [Docker](https://docs.docker.com/engine/install/)
@@ -49,7 +49,7 @@ MYSQL_PASSWORD=SOME_RANDOM_PASSWORD docker compose up
 ## Manuelle Installation
 ### Benötigte Software
 - [Node.js](https://nodejs.org/)
-- Rush.js (Install by running `npm install -g @microsoft/rush`)
+- Rush.js (Kann installiert werden mit dem Befehl `npm install -g @microsoft/rush`)
 
 ### Source
 Zunächst muss das Repository geklont werden:
