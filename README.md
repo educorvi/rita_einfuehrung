@@ -3,8 +3,12 @@ Link: https://educorvi.github.io/rita_einfuehrung/
 
 ## Dev Setup
 ```bash
-# install mkdocs
-pip install mkdocs[i18n]
+# ggf virtual environment erstellen
+python -m venv .
+source bin/activate
+
+# Abhängigkeiten installieren
+pip install -r requirements.txt
 
 # serve
 mkdocs serve
