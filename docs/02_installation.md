@@ -41,15 +41,18 @@ services:
         ports:
             - '3000:3000'
 ```
-Nun kann der Server ausgeführt werden, indem im selben Ordner, in dem auch die oben erwähnte Datei liegt, folgender Befehl ausgeführt wird:
+Weiterhin muss im selben Ordner noch eine Datei mit dem Namen `.env` angelegt werden, die ein Passwort für die MySql Datenbank festlegt:
+```
+MYSQL_PASSWORD=SOME_RANDOM_PASSWORD 
+```
+Nun kann der Server ausgeführt werden, indem im selben Ordner, in dem auch die oben erwähnten Dateien liegen, folgender Befehl ausgeführt wird:
 ```bash
-MYSQL_PASSWORD=SOME_RANDOM_PASSWORD docker compose up
+docker compose up
 ```
 
 ## Manuelle Installation
 ### Benötigte Software
 - [Node.js](https://nodejs.org/)
-- Rush.js (Kann installiert werden mit dem Befehl `npm install -g @microsoft/rush`)
 
 ### Source
 Zunächst muss das Repository geklont werden:
@@ -60,11 +63,8 @@ cd rita
 
 ### Bauen und Starten der Software
 ```bash
-# Installieren der Abhängigkeiten
-rush install
-
-# Bauen
-rush build
+# Installieren der Abhängigkeiten und Bauen
+./setup.sh
 
 # Wechsel in das rita-http Verzeichnis
 cd rita-http
