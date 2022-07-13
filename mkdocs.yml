@@ -3,3 +3,6 @@ site_url: https://educorvi.github.io/rita_einfuehrung/
 theme:
   name: readthedocs
   locale: de
+repo_url: https://github.com/educorvi/rita
+site_author: Julian Pollinger
+edit_uri: ""
