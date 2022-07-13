@@ -1,7 +1,7 @@
 # Installation
 Bevor wir nun praktisch versuchen erste Regeln zu schreiben und auszuwerten, müssen wir zunächst Rita aufsetzen. Dafür werden wir den bereits erwähnten Server installieren, der einer REST Api für Rita bereitstellt.
 
-Dies kann entweder mit Docker oder mit einer manuellen Installation geschehen
+Dies kann entweder mit Docker oder mit einer manuellen Installation geschehen. Nach der Installation wird der Server unter der Adresse http://localohost:3000 aufrufbar sein.
 ## Docker
 ### Benötigte Software
 - [Docker](https://docs.docker.com/engine/install/)
@@ -54,7 +54,7 @@ MYSQL_PASSWORD=SOME_RANDOM_PASSWORD docker compose up
 ### Source
 Zunächst muss das Repository geklont werden:
 ```bash
-git clone https://github.com/educorvi/rita.git
+git clone -b main https://github.com/educorvi/rita.git
 cd rita
 ```
 
@@ -68,6 +68,12 @@ rush build
 
 # Wechsel in das rita-http Verzeichnis
 cd rita-http
+
+# Konfigurieren der .env Datei
+cp .env.template .env
+
+# In der .env Datei LOGLEVEL auf "info" und DB_TYPE auf "SQLITE" setzen 
+# und bei Bedarf andere Einstellungen vornehmen
 
 # HTTP Server starten
 node .
