@@ -1,2 +1,5 @@
 site_name: Rita Einführung
-theme: readthedocs
+site_url: https://educorvi.github.io/rita_einfuehrung/
+theme:
+  name: readthedocs
+  locale: de
