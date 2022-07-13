@@ -26,7 +26,7 @@ services:
     rita-http:
         depends_on:
             - mysql
-        image: ghcr.io/educorvi/rita-http:latest
+        image: ghcr.io/educorvi/rita-http:3-latest
         container_name: rita-http
         environment:
             WAIT_HOSTS: mysql:3306
