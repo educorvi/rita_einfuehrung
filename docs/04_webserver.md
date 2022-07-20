@@ -1,4 +1,4 @@
-# Der Webserver
+# Einrichten des Webservers
 Der Webserver läuft nun unter dem Port 3000 (oder einem anderen Port, falls entsprechend geändert).
 Ruft man nun den Server auf ([http://localhost:3000](http://localhost:3000)), erhält man ein JSON Objekt mit Informationen über selbigen:
 ```json

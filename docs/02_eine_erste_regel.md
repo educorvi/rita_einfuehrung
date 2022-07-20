@@ -62,19 +62,19 @@ Die Regel muss eine im Ruleset eindeutige ID enthalten und eine Formel, die die 
 
 ### Anwendung
 Wenden wir das Gelernte nun also an und setzen unsere Regel als Rita Regel um. Zur Erinnerung:
-> Die Person deren Daten übergeben wurden, darf kein Mitarbeiter sein und muss ein Einhorn haben.  
+> Die Person deren Daten übergeben wurden, darf kein Mitarbeiter sein und muss einen Computer haben.  
 ```mermaid
 graph
 
 u1(Und) --> n1(Nicht)
-u1 --> e1(hat Einhorn)
+u1 --> e1(hat Computer)
 n1 --> m1(Mitarbeiter)
 ```
 
 Wir gehen davon aus, dass wir die Daten in folgendem Format übergeben bekommen:
 ```json
 {
-    "hatEinhorn": true/false,
+    "hatComputer": true/false,
     "mitarbeiter": true/false
 }
 ```
@@ -89,7 +89,7 @@ Da wir auf der obersten Ebene ein "Und" haben, beginnen wir mit einem `and`
       "rule": {
         "type": "and",
         "arguments": [
-          //hat Einhorn,
+          //hat Computer,
           //nicht Mitarbeiter
         ]
       }
@@ -97,7 +97,7 @@ Da wir auf der obersten Ebene ein "Und" haben, beginnen wir mit einem `and`
   ]
 }
 ```
-Das Argument "Hat Einhorn" können wir nun mit einem Atom aus den Daten auslesen:
+Das Argument "Hat Computer" können wir nun mit einem Atom aus den Daten auslesen:
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/educorvi/rita/main/rita-core/src/schema/schema.json",
@@ -109,7 +109,7 @@ Das Argument "Hat Einhorn" können wir nun mit einem Atom aus den Daten auslesen
         "arguments": [
           {
             "type": "atom",
-            "path": "hatEinhorn"
+            "path": "hatComputer"
           }
           //nicht Mitarbeiter
         ]
@@ -118,7 +118,7 @@ Das Argument "Hat Einhorn" können wir nun mit einem Atom aus den Daten auslesen
   ]
 }
 ```
-"Mitarbeiter" können wir auch auslesen und müssen es dann nur noch mit `not` negieren:
+"Mitarbeiter" kkann auf die selbe Weise ausgelesen werden. Allerdings verlangt unsere Formel ja gerade "nicht Mitarbeiter". Deshalb müssen wir das `atom`  in ein `not` schreiben:
 
 ```json
 {
@@ -131,7 +131,7 @@ Das Argument "Hat Einhorn" können wir nun mit einem Atom aus den Daten auslesen
         "arguments": [
           {
             "type": "atom",
-            "path": "hatEinhorn"
+            "path": "hatComputer"
           },
           {
             "type": "not",

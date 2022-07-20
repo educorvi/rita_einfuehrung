@@ -1,5 +1,5 @@
 # Installation
-Bevor wir nun praktisch versuchen erste Regeln zu schreiben und auszuwerten, müssen wir zunächst Rita aufsetzen. Dafür werden wir den bereits erwähnten Server installieren, der einer REST Api für Rita bereitstellt.
+Bevor wir nun praktisch versuchen erste Regeln auszuwerten, müssen wir zunächst Rita aufsetzen. Dafür werden wir den bereits erwähnten Server installieren, der einer REST Api für Rita bereitstellt.
 
 Dies kann entweder mit Docker oder mit einer manuellen Installation geschehen. Nach der Installation wird der Server unter der Adresse [http://localhost:3000](http://localhost:3000) aufrufbar sein.
 
