@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://educorvi.github.io/rita_einfuehrung/</loc>
+         <lastmod>2022-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://educorvi.github.io/rita_einfuehrung/01_rita/</loc>
+         <lastmod>2022-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://educorvi.github.io/rita_einfuehrung/02_eine_erste_regel/</loc>
+         <lastmod>2022-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://educorvi.github.io/rita_einfuehrung/03_installation/</loc>
+         <lastmod>2022-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://educorvi.github.io/rita_einfuehrung/04_webserver/</loc>
+         <lastmod>2022-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://educorvi.github.io/rita_einfuehrung/05_spielen_mit_dem_server/</loc>
+         <lastmod>2022-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
