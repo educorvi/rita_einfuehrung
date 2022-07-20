@@ -20,14 +20,17 @@ Enthalten sind unter anderem die Versionsnummern des Servers, die installierte R
 Unter [http://localhost:3000/docs](http://localhost:3000/docs) befindet sich eine Dokumentation der aufrufbaren URLs. Außerdem bietet die Swagger UI eine Oberfläche, um diese Endpunkte auszuprobieren.
 
 ## Konfigurieren des Zugriffs
-Für die Zwecke dieses Tutorials ist es sinnvoll, dem anonymen Nutzer alle Rechte einzuräumen, damit kein API Key eingegeben werden muss. Für einen produktiven oder öffentlichen Einsatz ist das offensichtlich NICHT empfehlenswert.
+Für die Zwecke dieses Tutorials ist es sinnvoll, dem anonymen Nutzer alle Rechte einzuräumen, damit kein API Key eingegeben werden muss. 
+!!! warning
+    Für einen produktiven oder öffentlichen Einsatz ist das offensichtlich NICHT empfehlenswert.
 
-Falls der Server mit Docker gestartet wurde, muss zunächst ein Terminal im Container geöffnet werden:
-```bash
-docker exec -it rita-http /bin/sh
-```
-Wenn das Projekt lokal läuft, reicht es, in das Arbeitsverzeichnis zu wechseln.
+=== "Docker"
+    ```bash
+    docker exec -it rita-http /bin/sh
+    ```
+=== "Manuelle Installation"
+    In das Arbeitsverzeichnis zu wechseln.
 
-In beiden Fällen anschließend `node . --config` ausführen, um den Konfigurationsassistenten zu starten. Dann "API Key Management" auswählen, dann "Edit" und dann "Public Access (*)". Den Namen unverändert lassen und einfach "enter" drücken, dann alle Berechtigungen gewähren, indem man entweder "y" oder "enter" drückt. Anschließend kann der Konfigurator wieder geschlossen werden.
+Anschließend `node . --config` ausführen, um den Konfigurationsassistenten zu starten. Dann "API Key Management" auswählen, dann "Edit" und dann "Public Access (*)". Den Namen unverändert lassen und einfach "enter" drücken, dann alle Berechtigungen gewähren, indem man entweder "y" oder "enter" drückt. Anschließend kann der Konfigurator wieder geschlossen werden.
 
 In diesem Konfigurator können auch eigene API Keys erstellt/verwaltet/gelöscht werden.

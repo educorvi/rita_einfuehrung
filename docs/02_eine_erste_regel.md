@@ -1,13 +1,19 @@
 # Eine erste Regel
 In diesem Kapitel soll es darum gehen, unsere erste eigene einfache Regel zu schreiben.
 Das Beispiel dafür soll folgende Regel sein:
-> Die Person deren Daten übergeben wurden, darf kein Mitarbeiter sein und muss ein Einhorn haben.
+!!! example "Beispiel" 
+    Die Person deren Daten übergeben wurden, darf kein Mitarbeiter sein und muss ein Einhorn haben.
 ## Von natürlicher Sprache zur Logik
 Der erste Schritt ist, sich klarzumachen, was eigentlich die Anforderungen der Regel sind, und wie diese zusammenhängen. 
 
 Unsere Regel besteht aus zwei Teilen, die durch ein "und" miteinander verbunden sind. Diese sind "hat ein Einhorn" und "ist nicht Mitarbeiter". Letzteres lässt sich auch wieder zerlegen, nämlich in "nicht" und "ist Mitarbeiter". Dieses hierarchische Zerlegen lässt sich gut als Baum visualisieren:
+```mermaid
+graph
 
-![Baum zu Beispiel 1](puml/beispiel1_baum.svg)
+u(Und) --> n(Nicht)
+u --> e(hat Einhorn)
+n --> m(Mitarbeiter)
+```
 
 ## Unsere Regel in Rita
 ### Einleitung
@@ -57,7 +63,13 @@ Die Regel muss eine im Ruleset eindeutige ID enthalten und eine Formel, die die 
 ### Anwendung
 Wenden wir das Gelernte nun also an und setzen unsere Regel als Rita Regel um. Zur Erinnerung:
 > Die Person deren Daten übergeben wurden, darf kein Mitarbeiter sein und muss ein Einhorn haben.  
->![Baum zu Beispiel 1](puml/beispiel1_baum.svg)
+```mermaid
+graph
+
+u1(Und) --> n1(Nicht)
+u1 --> e1(hat Einhorn)
+n1 --> m1(Mitarbeiter)
+```
 
 Wir gehen davon aus, dass wir die Daten in folgendem Format übergeben bekommen:
 ```json
@@ -136,4 +148,4 @@ Das Argument "Hat Einhorn" können wir nun mit einem Atom aus den Daten auslesen
   ]
 }
 ```
-Das erste Ruleset ist geschrieben! Im nächsten Kapitel werden wir einen Webserver installieren, auf dem man dieses Ruleset speichern und Daten dagegen auswerten können. In den späteren Kapiteln wird es dann um komplexere Regeln gehen, zum Beispiel mit Vergleichen oder Berechnungen.
+:material-party-popper: Das erste Ruleset ist geschrieben! Im nächsten Kapitel werden wir einen Webserver installieren, auf dem man dieses Ruleset speichern und Daten dagegen auswerten können. In den späteren Kapiteln wird es dann um komplexere Regeln gehen, zum Beispiel mit Vergleichen oder Berechnungen.
