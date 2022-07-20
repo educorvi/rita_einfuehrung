@@ -21,15 +21,16 @@ Unter [http://localhost:3000/docs](http://localhost:3000/docs) befindet sich ein
 
 ## Konfigurieren des Zugriffs
 Für die Zwecke dieses Tutorials ist es sinnvoll, dem anonymen Nutzer alle Rechte einzuräumen, damit kein API Key eingegeben werden muss. 
-!!! warning
+!!! warning "Achtung!"
     Für einen produktiven oder öffentlichen Einsatz ist das offensichtlich NICHT empfehlenswert.
 
 === "Docker"
+    Folgenden Befehl ausführen, um eine Konsole im Container zu erhalten:
     ```bash
     docker exec -it rita-http /bin/sh
     ```
 === "Manuelle Installation"
-    In das Arbeitsverzeichnis zu wechseln.
+    In das Arbeitsverzeichnis wechseln, indem der Server liegt (selber Ordner, der auch `package.json` enthält)
 
 Anschließend `node . --config` ausführen, um den Konfigurationsassistenten zu starten. Dann "API Key Management" auswählen, dann "Edit" und dann "Public Access (*)". Den Namen unverändert lassen und einfach "enter" drücken, dann alle Berechtigungen gewähren, indem man entweder "y" oder "enter" drückt. Anschließend kann der Konfigurator wieder geschlossen werden.
 
