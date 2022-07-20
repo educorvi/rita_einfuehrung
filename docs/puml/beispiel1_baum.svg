@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="372.8px" preserveAspectRatio="none" style="width:457px;height:372px;background:#FFFFFF;" version="1.1" viewBox="0 0 457 372" width="457.6px" zoomAndPan="magnify"><defs/><g><g id="elem_u"><ellipse cx="228.6641" cy="36.0726" fill="#F1F1F1" rx="50.2641" ry="26.4726" style="stroke:#181818;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="22.4" lengthAdjust="spacing" textLength="44.8" x="203.1832" y="43.0325">Und</text></g><g id="elem_e"><ellipse cx="116.6519" cy="185.6107" fill="#F1F1F1" rx="107.0519" ry="27.2107" style="stroke:#181818;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="22.4" lengthAdjust="spacing" textLength="120" x="51.8519" y="193.1835">hatEinhorn</text></g><g id="elem_n"><ellipse cx="340.6764" cy="185.879" fill="#F1F1F1" rx="59.8764" ry="26.679" style="stroke:#181818;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="22.4" lengthAdjust="spacing" textLength="57.6" x="307.0764" y="193.4518">Nicht</text></g><g id="elem_m"><ellipse cx="341.0622" cy="336.0183" fill="#F1F1F1" rx="108.2622" ry="27.2183" style="stroke:#181818;stroke-width:0.8000000000000002;"/><text fill="#000000" font-family="sans-serif" font-size="22.4" lengthAdjust="spacing" textLength="121.6" x="275.4622" y="343.591">Mitarbeiter</text></g><!--MD5=[108d03b734d6096ae809d5d30fcb46bb]
+link u to n--><g id="link_u_n"><path d="M246.8,61.12 C265.952,86.16 296.336,125.872 317.344,153.344 " fill="none" id="u-to-n" style="stroke:#181818;stroke-width:1.6000000000000003;"/><polygon fill="#181818" points="322.48,160.048,318.8371,144.7167,317.6289,153.6866,308.6589,152.4784,322.48,160.048" style="stroke:#181818;stroke-width:1.6000000000000003;"/></g><!--MD5=[045ac208ce3b5b3d224befd3f4c5c570]
+link u to e--><g id="link_u_e"><path d="M210.8,61.12 C192,85.712 162.352,124.464 141.392,151.856 " fill="none" id="u-to-e" style="stroke:#181818;stroke-width:1.6000000000000003;"/><polygon fill="#181818" points="136.256,158.576,150.0942,151.0378,141.1215,152.2257,139.9337,143.253,136.256,158.576" style="stroke:#181818;stroke-width:1.6000000000000003;"/></g><!--MD5=[60eb46351b5174c153aa1da030b48c39]
+link n to m--><g id="link_n_m"><path d="M340.8,212.176 C340.8,236.4 340.8,273.376 340.8,300.304 " fill="none" id="n-to-m" style="stroke:#181818;stroke-width:1.6000000000000003;"/><polygon fill="#181818" points="340.8,308.32,347.2,293.92,340.8,300.32,334.4,293.92,340.8,308.32" style="stroke:#181818;stroke-width:1.6000000000000003;"/></g><!--MD5=[70e106448294ccd329086f4d1f6514f6]
+@startuml
+scale 1200
+
+(Und) as u
+(hatEinhorn) as e
+(Nicht) as n
+(Mitarbeiter) as m
+
+
+u - -> n
+u - -> e
+n - -> m
+@enduml
+
+PlantUML version 1.2022.6(Tue Jun 21 19:34:49 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

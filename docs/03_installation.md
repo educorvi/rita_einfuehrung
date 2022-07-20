@@ -47,8 +47,9 @@ MYSQL_PASSWORD=SOME_RANDOM_PASSWORD
 ```
 Nun kann der Server ausgeführt werden, indem im selben Ordner, in dem auch die oben erwähnten Dateien liegen, folgender Befehl ausgeführt wird:
 ```bash
-docker compose up
+docker compose up -d
 ```
+Heruntergefahren werden kann der Server mit `docker compose down`.
 
 ## Manuelle Installation
 ### Benötigte Software

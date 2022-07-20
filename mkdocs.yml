@@ -6,3 +6,4 @@ theme:
 repo_url: https://github.com/educorvi/rita
 site_author: Julian Pollinger
 edit_uri: ""
+extra_css: [extra.css]
