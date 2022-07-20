@@ -7,4 +7,4 @@ Hier kommt nun Rita ("**R**ule **it** **a**ll") ins Spiel. Das Projekt besteht a
 
 - Die Sprache, in der die Regeln formuliert werden
 - Ein Parser, der die in der Sprache geschriebenen Regeln parst und so für den Computer verwertbar macht
-- Weitere Projekte, die auf diesen Bausteinen aufbauen, so zum Beispiel ein Webserver, der eine REST Api zur Verfügung stellt um Rita Regeln zu verwalten und mit Daten auszuwerten
+- Weitere Projekte, die auf diesen Bausteinen aufbauen, so zum Beispiel ein Webserver, der eine REST Api zur Verfügung stellt, um Rita Regeln zu verwalten und mit Daten auszuwerten
