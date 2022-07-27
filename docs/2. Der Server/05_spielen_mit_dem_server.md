@@ -102,3 +102,6 @@ Dabei sollte folgendes Ergebnis zurückkommen:
 1. Ist das Gesamtergebnis des Rulesets. Nur dann `true`, wenn auch alle Regeln in diesem Ruleset `true` sind.
 2. Gibt für jede Regel das individuelle Ergebnis an.
 3. Anzahl der erfüllten und Anzahl der unerfüllten Regeln.
+
+## API Keys
+Bereits im letzten Kapitel wurde gezeigt, wie API Keys erstellt, verändert und gelöscht werden können. Der API Key kann dann anschließend in der Swagger UI verwendet werden, indem man auf Authorize drückt und ihn dort eingibt. Ab dann werden Requests mit diesem API Key gestellt. Bei Curl muss der Header `X-API-KEY` mit dem API Key als Wert gesetzt werden.
