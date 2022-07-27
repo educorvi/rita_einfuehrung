@@ -6,6 +6,7 @@ theme:
   features:
     - navigation.instant
     - content.tabs.link
+    - content.code.annotate
   palette:
 
     # Palette toggle for light mode
