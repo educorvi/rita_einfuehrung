@@ -1,8 +1,10 @@
-site_name: Rita 1. Einführung
+site_name: Rita
 site_url: https://educorvi.github.io/rita_einfuehrung/
 theme:
   name: material
   language: de
+  logo: assets/educorvi.png
+  favicon: assets/favicon_educorvi.png
   features:
     - navigation.instant
     - navigation.tracking
