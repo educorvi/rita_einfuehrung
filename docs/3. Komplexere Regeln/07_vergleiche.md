@@ -1,5 +1,5 @@
 # Vergleiche
-Bei Vergleichen werden, wie der Name schon vermuten lässt, die beiden Argumente miteinander verglichen und es wird ein entsprechender wahrheitswert zurückgegeben. Verglichen werden können Zahlen und Strings. Mögliche Varianten sind
+Bei Vergleichen werden, wie der Name schon vermuten lässt, die beiden Argumente miteinander verglichen und es wird ein entsprechender Wahrheitswert zurückgegeben. Verglichen werden können Zahlen, Strings und Datumsangaben. Mögliche Varianten sind
 
 * **equals:** Die beiden Argumente sind identisch
 * **greater:** Das erste Argument ist (lexikalisch) größer als das zweite
