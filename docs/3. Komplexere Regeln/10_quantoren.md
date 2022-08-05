@@ -75,6 +75,7 @@ Die Regel lautet dann wie folgt:
                 }, 
                 "placeholder": "name",
                 "rule": {
+                    "comment": "Diese Regel wird für alle Zahlen im array zahlen überprüft",
                     "type": "comparison",
                     "operation": "equal",
                     "arguments": [
