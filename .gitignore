@@ -2,3 +2,4 @@ site
 .idea
 docker-compose.yml
 test.json
+venv

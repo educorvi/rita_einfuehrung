@@ -2,16 +2,16 @@
 In diesem Kapitel soll es darum gehen, unsere erste eigene einfache Regel zu schreiben.
 Das Beispiel dafür soll folgende Regel sein:
 !!! example "Beispiel" 
-    Die Person deren Daten übergeben wurden, darf kein Mitarbeiter sein und muss ein Einhorn haben.
+    Die Person deren Daten übergeben wurden, darf kein Mitarbeiter sein und muss einen Computer haben.
 ## Von natürlicher Sprache zur Logik
 Der erste Schritt ist, sich klarzumachen, was eigentlich die Anforderungen der Regel sind, und wie diese zusammenhängen. 
 
-Unsere Regel besteht aus zwei Teilen, die durch ein "und" miteinander verbunden sind. Diese sind "hat ein Einhorn" und "ist nicht Mitarbeiter". Letzteres lässt sich auch wieder zerlegen, nämlich in "nicht" und "ist Mitarbeiter". Dieses hierarchische Zerlegen lässt sich gut als Baum visualisieren:
+Unsere Regel besteht aus zwei Teilen, die durch ein "und" miteinander verbunden sind. Diese sind "hat einen Computer" und "ist nicht Mitarbeiter". Letzteres lässt sich auch wieder zerlegen, nämlich in "nicht" und "ist Mitarbeiter". Dieses hierarchische Zerlegen lässt sich gut als Baum visualisieren:
 ```mermaid
 graph
 
 u(Und) --> n(Nicht)
-u --> e(hat Einhorn)
+u --> e(hat Computer)
 n --> m(Mitarbeiter)
 ```
 
