@@ -2,7 +2,7 @@
 In diesem Kapitel soll es darum gehen, unsere erste eigene einfache Regel zu schreiben.
 Das Beispiel dafür soll folgende Regel sein:
 !!! example "Beispiel" 
-    Die Person deren Daten übergeben wurden, darf kein Mitarbeiter sein und muss einen Computer haben.
+    Die Person, deren Daten übergeben wurden, darf kein Mitarbeiter sein und muss einen Computer haben.
 ## Von natürlicher Sprache zur Logik
 Der erste Schritt ist, sich klarzumachen, was eigentlich die Anforderungen der Regel sind, und wie diese zusammenhängen. 
 
@@ -62,7 +62,7 @@ Die Regel muss eine im Ruleset eindeutige ID enthalten und eine Formel, die die 
 
 ### Anwendung
 Wenden wir das Gelernte nun also an und setzen unsere Regel als Rita Regel um. Zur Erinnerung:
-> Die Person deren Daten übergeben wurden, darf kein Mitarbeiter sein und muss einen Computer haben.  
+> Die Person, deren Daten übergeben wurden, darf kein Mitarbeiter sein und muss einen Computer haben.  
 ```mermaid
 graph
 
@@ -118,7 +118,7 @@ Das Argument "Hat Computer" können wir nun mit einem Atom aus den Daten auslese
   ]
 }
 ```
-"Mitarbeiter" kkann auf die selbe Weise ausgelesen werden. Allerdings verlangt unsere Formel ja gerade "nicht Mitarbeiter". Deshalb müssen wir das `atom`  in ein `not` schreiben:
+"Mitarbeiter" kann auf die selbe Weise ausgelesen werden. Allerdings verlangt unsere Formel ja gerade "nicht Mitarbeiter". Deshalb müssen wir das `atom`  in ein `not` schreiben:
 
 ```json
 {
@@ -148,4 +148,4 @@ Das Argument "Hat Computer" können wir nun mit einem Atom aus den Daten auslese
   ]
 }
 ```
-:material-party-popper: Das erste Ruleset ist geschrieben! Im nächsten Kapitel werden wir einen Webserver installieren, auf dem man dieses Ruleset speichern und Daten dagegen auswerten können. In den späteren Kapiteln wird es dann um komplexere Regeln gehen, zum Beispiel mit Vergleichen oder Berechnungen.
+:material-party-popper: Das erste Ruleset ist geschrieben! Im nächsten Kapitel werden wir einen Webserver installieren, auf dem man dieses Ruleset speichern und Daten dagegen auswerten kann. In den späteren Kapiteln wird es dann um komplexere Regeln gehen, zum Beispiel mit Vergleichen oder Berechnungen.
