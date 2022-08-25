@@ -5,8 +5,8 @@ Dies kann entweder mit Docker oder mit einer manuellen Installation geschehen. N
 
 === "Docker"
     ## Benötigte Software
-    - [Docker](https://docs.docker.com/engine/install/)
-    - [Docker Compose](https://docs.docker.com/compose/install/)
+    - <a href="https://docs.docker.com/engine/install/" target="_blank">Docker</a>
+    - <a href="https://docs.docker.com/compose/install/" target="_blank">Docker Compose</a>
     ## Setup
     Erstellen Sie zunächst die Datei `docker-compose.yaml` mit folgendem Inhalt:
     ```yaml
@@ -53,7 +53,7 @@ Dies kann entweder mit Docker oder mit einer manuellen Installation geschehen. N
 
 === "Manuelle Installation"
     ## Benötigte Software
-    - [Node.js](https://nodejs.org/)
+    - <a href="https://nodejs.org/" target="_blank">Node.js</a>
 
     ## Source
     Zunächst muss das Repository geklont werden:

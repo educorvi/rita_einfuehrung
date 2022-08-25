@@ -31,7 +31,7 @@ Rita ist so angelegt, dass eine wie die eben angelegte Datei stets ein sogenannt
 In Zeile 1 steht die bereits erwähnte Angabe des JSON Schemas, in Zeile 2 steht ein (noch leeres) Array von Regeln, in das wir nun unsere Regel schreiben wollen.
 
 ### Die Regel
-Zunächst ergänzen wir das `rules` Array um ein JSON Objekt, dass unsere Regel beschreibt
+Zunächst ergänzen wir das `rules` Array um ein JSON Objekt, das unsere Regel beschreibt:
 
 ```json
 {

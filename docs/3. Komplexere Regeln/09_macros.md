@@ -1,7 +1,7 @@
 # Macros
 Es gibt zwei Arten von Macros: Das `now` Macro und das `length` Macro
 ## now
-Dieses Macro gibt zum Zeitpunkt der Evaluation die aktuelle DateTime, also Datum und Uhrzeit zurück. Es kann zum Beispiel für Berechnungen mit Datumsangaben oder Vergleiche verwendet werden. Ein Beispiel dafür wäre eine Regel, die besagt, dass ein angegebenes Datum in der Zukunft liegen muss:
+Dieses Macro gibt zum Zeitpunkt der Evaluation die aktuelle DateTime, also Datum und Uhrzeit zurück. Es kann für Berechnungen mit Datumsangaben oder Vergleiche verwendet werden. Ein Beispiel dafür wäre eine Regel, die besagt, dass ein angegebenes Datum in der Zukunft liegen muss:
 ```json
 {
     "$schema": "https://raw.githubusercontent.com/educorvi/rita/main/rita-core/src/schema/schema.json",

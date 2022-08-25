@@ -22,7 +22,7 @@ Bei Vergleichen werden, wie der Name schon vermuten lässt, die beiden Argumente
 1. Oder eine der anderen Varianten
 
 ## Beispiel
-Ein Beispielruleset, die einen numerischen und einen lexikalischen Vergleich enthält:
+Ein Beispielruleset, das einen numerischen und einen lexikalischen Vergleich enthält:
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/educorvi/rita/main/rita-core/src/schema/schema.json",

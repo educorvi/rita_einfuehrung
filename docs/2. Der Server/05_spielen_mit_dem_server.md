@@ -1,5 +1,5 @@
 # Den Server ausprobieren
-Zum Ausprobieren des eignet sich die SwaggerUI. Diese findet sich, wie bereits im letzten Kapitel erwähnt, unter [http://localhost:3000/docs](http://localhost:3000/docs). Dort sind auch die Endpunkte dokumentiert. Eine kurze Zusammenfassung:
+Zum Ausprobieren des Servers eignet sich die SwaggerUI. Diese findet sich, wie bereits im letzten Kapitel erwähnt, unter [http://localhost:3000/docs](http://localhost:3000/docs). Dort sind auch die Endpunkte dokumentiert. Eine kurze Zusammenfassung:
 
 | Method | URL                   | Description                                                                                      |
 |--------|-----------------------|--------------------------------------------------------------------------------------------------|
@@ -41,7 +41,7 @@ Speichern wir zunächst das vorhin erstellte Ruleset.
 ```
 
 ## Ruleset speichern
-Um ein Ruleset zu speichern, müssen wir es gegen den Endpunkt `/rulesets/{id}` posten. Die ID ist hierbei frei wählbar, sollte aber unbelegt sein, da ein etwaiges anderes Ruleset mit derselben ID dann überschreiben würden.
+Um ein Ruleset zu speichern, müssen wir es gegen den Endpunkt `/rulesets/{id}` posten. Die ID ist hierbei frei wählbar, sollte aber unbelegt sein, da ein etwaiges anderes Ruleset mit derselben ID sonst überschrieben wird.
 === "Swagger UI"
     Wir können zum Testen der Endpunkte die Swagger UI verwenden. Einmal geöffnet klicken wir den gewünschten Endpunkt (`POST /rulesets/{rulesetID}`) an. In dem sich öffnenden Bereich wählen wir nun "Try it out". Anschließend muss im Feld `rulesetID` die oben beschriebene ID eingegeben werden, in den Request Body wird das Ruleset selbst kopiert. Dann nur noch auf "Execute" klicken. Als Antwort sollte der Server den Statuscode 201 liefern.
 
@@ -65,7 +65,7 @@ Im Ergebnis sollten alle bis jetzt erstellten Rulesets enthalten sein.
 Probiere auch gerne auf dieselbe Art und Weise die anderen Endpunkte aus. Ihre Funktion ist in der Swagger UI dokumentiert.
 
 ## Evaluieren
-Jetzt, wo wir ein Ruleset auf dem Server erstellt haben, können wir endlich das machen, wofür Rita eigentlich gedacht ist: Daten auf diesen Regeln auswerten. Dafür müssen wir die Daten an den Endpunkt `/evaluate/{id}` posten, wobei die Daten im Body übergeben werden und die id in der URL der ID der Regel (in unserem Fall 0) entspricht, die wir auswerten wollen.
+Jetzt, wo wir ein Ruleset auf dem Server erstellt haben, können wir endlich das machen, wofür Rita eigentlich gedacht ist: Daten auf diesen Regeln auswerten. Dafür müssen wir die Daten an den Endpunkt `/evaluate/{id}` posten, wobei die Daten im Body übergeben werden und die ID in der URL der ID der Regel (in unserem Fall 0) entspricht, die wir auswerten wollen.
 Die Daten sind frei wählbar, hier ein Beispiel, das zu wahr auswertet:
 
 ```json
@@ -75,7 +75,7 @@ Die Daten sind frei wählbar, hier ein Beispiel, das zu wahr auswertet:
 }
 ```
 === "Swagger UI"
-    Den Endpunkt (`GET /rulesets`) auswählen, dann "Try it out", dann bei rulesetID die ID (in unserem Fall 0) und beim Request body die Daten eingeben und "Execute" drücken. 
+    Den Endpunkt (`GET /rulesets`) auswählen, dann "Try it out", dann bei rulesetID die ID (in unserem Fall 0) und beim Request Body die Daten eingeben und "Execute" drücken. 
 
 === "Curl"
     ```bash

@@ -1,16 +1,16 @@
 # Berechnungen
-In einem Ruleset können auch Berechnungen ausgeführt werden. Diese Berechnungen können jedoch nicht die Wurzel einer Regel sein, da Regeln ja stets zu wahr oder falsch ausgewertet können. Das bedeutet, dass Berechnungen stets innerhalb eines Vergleiches sein müssen. "`Preis ohne Steuer`" ist zum Beispiel keine gültige Regel, "`Preis ohne Steuer ist kleiner als 10`" hingegen schon.
+In einem Ruleset können auch Berechnungen ausgeführt werden. Diese Berechnungen können jedoch nicht die Wurzel einer Regel sein, da Regeln ja stets zu wahr oder falsch ausgewertet werden müssen. Das bedeutet, dass Berechnungen stets innerhalb eines Vergleiches sein müssen. "`Preis ohne Steuer`" ist zum Beispiel keine gültige Regel, "`Preis ohne Steuer ist kleiner als 10`" hingegen schon.
 
 ## Berechnungen mit Zahlen
-Angenommen, wir wollen überprüfen, dass der Nutzer `ab12` nicht mehr als 20% aller Computer im Büro besitzt und wir bekommen durch die Daten sowohl die Anzahl aller Computer im Büro, als auch die Anzahl der Computer pro Nutzer in folgender Form:
+Angenommen, wir wollen überprüfen, dass der Nutzer `George` nicht mehr als 20% aller Computer im Büro besitzt und wir bekommen durch die Daten sowohl die Anzahl aller Computer im Büro, als auch die Anzahl der Computer pro Nutzer in folgender Form:
 ```json
 {
     "anzahlComputer": 10,
     "computerProNutzer": {
-        "ab12": 2,
-        "xy": 5,
-        "dd": 2,
-        "albert": 1
+        "George": 2,
+        "Maggie": 5,
+        "Albert": 2,
+        "Silas": 1
     }
 }
 ```
@@ -20,10 +20,10 @@ graph
 
 v1("Vergleich (smallerEquals)") --> b("Berechnung (Division)")
 v1 --> p("0.2")
-b --> cpn("computerProNutzer.ab12")
+b --> cpn("computerProNutzer.George")
 b --> ac(anzahlComputer)
 ```
-Um den Prozentsatz zu bekommen, teilen wir zunächst die Zahl der Computer des Nutzers durch die Zahl aller Computer und vergleichen das dann mit der Option "kleiner Gleich" mit der Zahl 0.2 (=20%).
+Um den Prozentsatz zu berechnen, teilen wir zunächst die Zahl der Computer des Nutzers durch die Zahl aller Computer und vergleichen das Ergebnis dann mit der Option "kleiner Gleich" mit der Zahl 0.2 (=20%).
 
 In einer Rita Regel sieht das aus wie folgt:
 ```json
@@ -42,7 +42,7 @@ In einer Rita Regel sieht das aus wie folgt:
                         "arguments": [
                             {
                                 "type": "atom",
-                                "path": "computerProNutzer.ab12"
+                                "path": "computerProNutzer.George"
                             },
                             {
                                 "type": "atom",
@@ -57,7 +57,7 @@ In einer Rita Regel sieht das aus wie folgt:
     ]
 }
 ```
-Mögliche Operationen sind:
+Mögliche Operationen für Berechnungen sind:
 
 - `add`: Addiert die beiden Argumente
 - `subtract`: Subtrahiert das zweite vom ersten Argument

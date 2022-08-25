@@ -14,7 +14,7 @@ Ruft man nun den Server auf ([http://localhost:3000](http://localhost:3000)), er
   ]
 }
 ```
-Enthalten sind unter anderem die Versionsnummern des Servers, die installierte Rita-Version, sowie alle Plugins und deren Versionen.
+Enthalten sind unter anderem die Version des Servers, die installierte Rita-Version, sowie alle Plugins und deren Versionen.
 
 ## Swagger UI
 Unter [http://localhost:3000/docs](http://localhost:3000/docs) befindet sich eine Dokumentation der aufrufbaren URLs. Außerdem bietet die Swagger UI eine Oberfläche, um diese Endpunkte auszuprobieren.
@@ -32,6 +32,6 @@ Für die Zwecke dieses Tutorials ist es sinnvoll, dem anonymen Nutzer alle Recht
 === "Manuelle Installation"
     In das Arbeitsverzeichnis wechseln, indem der Server liegt (selber Ordner, der auch `package.json` enthält)
 
-Anschließend `node . --config` ausführen, um den Konfigurationsassistenten zu starten. Dann "API Key Management" auswählen, dann "Edit" und dann "Public Access (*)". Den Namen unverändert lassen und einfach "enter" drücken, dann alle Berechtigungen gewähren, indem man entweder "y" oder "enter" drückt. Anschließend kann der Konfigurator wieder geschlossen werden.
+Anschließend `node . --config` ausführen, um den Konfigurationsassistenten zu starten. Dann "API Key Management" auswählen, dann "Edit" und dann "Public Access (*)". Den Namen unverändert lassen und dann alle Berechtigungen gewähren, indem man entweder "y" oder "enter" drückt. Anschließend kann der Konfigurator wieder geschlossen werden.
 
 In diesem Konfigurator können auch eigene API Keys erstellt/verwaltet/gelöscht werden.

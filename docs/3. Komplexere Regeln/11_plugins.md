@@ -1,5 +1,5 @@
 # Plugins
-Rita unterstützt auch Plugins. Diese sind nicht Teil der Standardfunktionalität und müssen hinzugefügt werden. Aktuell sind im Rita HTTP Server, alle verfügbaren Plugins installiert, wenn man den Server aufruft steht in der Willkommensnachricht auch eine Liste aller installierten Plugins, z.B.:
+Rita unterstützt auch Plugins. Diese sind nicht Teil der Standardfunktionalität und müssen hinzugefügt werden. Aktuell sind im Rita HTTP Server alle verfügbaren Plugins installiert, wenn man den Server aufruft steht in der Willkommensnachricht auch eine Liste aller installierten Plugins, z.B.:
 ```json
 {
   "version": "3.1.2",
@@ -13,7 +13,7 @@ Rita unterstützt auch Plugins. Diese sind nicht Teil der Standardfunktionalitä
   ]
 }
 ```
-Eine Liste der verfügbaren Plugins findet sich unter [https://github.com/educorvi/rita/tree/develop/plugins/](https://github.com/educorvi/rita/tree/develop/plugins/). Nutzer können auch eigene Plugins entwickeln, ds Konzept hinter Plugins ist simpel: Sie bekommen über die Regel eine Liste von Optionen, sowie die aktuellen Daten, können mit diesen dann beliebige Aktionen ausführen und das Ergebnis dieser Aktionen nutzen, um die Daten für die im Pluginblock angegebene Regel anzureichern. Die Optionen können sind vom Plugin beliebig festlegbar. Im Folgenden wird das am Beispiel des [HTTP Plugins](https://github.com/educorvi/rita/tree/develop/plugins/http), das während der Auswertung einer Regel einen HTTP-Request ausführt, demonstriert.
+Eine Liste der verfügbaren Plugins findet sich unter [https://github.com/educorvi/rita/tree/develop/plugins/](https://github.com/educorvi/rita/tree/develop/plugins/). Nutzer können auch eigene Plugins entwickeln, das Konzept dahinter ist simpel: Das Plugin bekommt über die Regel eine Liste von Optionen, sowie die aktuellen Daten, kann mit diesen dann beliebige Aktionen ausführen und das Ergebnis dieser Aktionen nutzen, um die Daten für die im Pluginblock angegebene Regel anzureichern. Die Optionen sind beliebig festlegbar. Im Folgenden wird das am Beispiel des [HTTP Plugins](https://github.com/educorvi/rita/tree/develop/plugins/http), das während der Auswertung einer Regel einen HTTP-Request ausführt, demonstriert.
 
 Angenommen wir wollen bei der Auswertung der Daten die Daten an die URL `https://example.com/api1` posten, und die Antwort, die vom Server im JSON-Format gesendet wird, in unseren Datensatz einspeisen.
 
@@ -47,7 +47,7 @@ Wir können nun in der Regel, die innerhalb des Plugins definiert ist, diese bei
                             "method": "POST"
                         },
                         "formula" : {
-                            "comment": "Hier können wir jetzt message und number verwenden",
+                            // Hier können wir jetzt message und number verwenden
                             "type": "comparison",
                             "operation": "equal",
                             "arguments": [
