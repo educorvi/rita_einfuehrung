@@ -10,12 +10,9 @@ Dies kann entweder mit Docker oder mit einer manuellen Installation geschehen. N
     ## Setup
     Erstellen Sie zunächst die Datei `docker-compose.yaml` mit folgendem Inhalt:
     ```yaml
-
-    version: '3'
-
     services:
         mysql:
-            image: mysql:8
+            image: mysql:9
             container_name: mysql
             environment:
                 MYSQL_RANDOM_ROOT_PASSWORD: 1
@@ -26,7 +23,7 @@ Dies kann entweder mit Docker oder mit einer manuellen Installation geschehen. N
         rita-http:
             depends_on:
                 - mysql
-            image: ghcr.io/educorvi/rita-http:3-latest
+            image: ghcr.io/educorvi/rita-http:5-latest
             container_name: rita-http
             environment:
                 WAIT_HOSTS: mysql:3306

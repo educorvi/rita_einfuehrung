@@ -2,13 +2,13 @@
 Rita unterstützt auch Plugins. Diese sind nicht Teil der Standardfunktionalität und müssen hinzugefügt werden. Aktuell sind im Rita HTTP Server alle verfügbaren Plugins installiert, wenn man den Server aufruft steht in der Willkommensnachricht auch eine Liste aller installierten Plugins, z.B.:
 ```json
 {
-  "version": "3.1.2",
+  "version": "5.0.1",
   "message": "Welcome to the RITA API. A documentation is available under ./docs.",
-  "ritaVersion": "4.0.0",
+  "ritaVersion": "5.4.3",
   "plugins": [
     {
       "name": "http",
-      "version": "1.1.0"
+      "version": "1.1.5"
     }
   ]
 }

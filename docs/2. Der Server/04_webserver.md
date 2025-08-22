@@ -3,13 +3,13 @@ Der Webserver läuft nun unter dem Port 3000 (oder einem anderen Port, falls ent
 Ruft man nun den Server auf ([http://localhost:3000](http://localhost:3000)), erhält man ein JSON Objekt mit Informationen über selbigen:
 ```json
 {
-  "version": "3.1.2",
+  "version": "5.0.1",
   "message": "Welcome to the RITA API. A documentation is available under ./docs.",
-  "ritaVersion": "4.0.0",
+  "ritaVersion": "5.4.3",
   "plugins": [
     {
       "name": "http",
-      "version": "1.1.0"
+      "version": "1.1.5"
     }
   ]
 }

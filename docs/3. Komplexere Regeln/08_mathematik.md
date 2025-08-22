@@ -105,17 +105,19 @@ Nun zurück zu unserem Beispiel. Es ergibt sich die folgende Regel:
                 "operation": "smaller",
                 "arguments": [
                     {
-                        "type": "calculation",
+                        "type": "dateCalculation",
                         "operation": "subtract",
                         "dateResultUnit": "years",
                         "arguments": [
                             {
                                 "type": "atom",
-                                "path": "wichtigesDatum"
+                                "path": "wichtigesDatum",
+                                "isDate": true
                             },
                             {
                                 "type": "atom",
-                                "path": "geburtstag"
+                                "path": "geburtstag",
+                                "isDate": true
                             }
                         ]
                     },
@@ -142,20 +144,22 @@ Wollen wir zum Beispiel überprüfen, ob der Tag vor dem Geburtstag des Nutzers 
                 "operation": "smaller",
                 "arguments": [
                     {
-                        "type": "calculation",
+                        "type": "dateCalculation",
                         "operation": "subtract",
                         "dateCalculationUnit": "days",
                         "arguments": [
                             {
                                 "type": "atom",
-                                "path": "geburtstag"
+                                "path": "geburtstag",
+                                "isDate": true
                             },
                             1
                         ]
                     },
                     {
                         "type": "atom",
-                        "path": "geburtstag"
+                        "path": "geburtstag",
+                        "isDate": true
                     }
                 ]
             }
