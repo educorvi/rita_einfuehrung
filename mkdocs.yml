@@ -30,6 +30,7 @@ site_author: Julian Pollinger
 edit_uri: ""
 plugins:
   - search
+  - privacy
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true

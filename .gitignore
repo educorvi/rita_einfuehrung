@@ -3,3 +3,4 @@ site
 docker-compose.yml
 test.json
 venv
+.cache

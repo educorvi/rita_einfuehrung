@@ -1,2 +1,2 @@
-mkdocs[i18n]
-mkdocs-material
+mkdocs[i18n]~=1.6.1
+mkdocs-material~=9.6.18
