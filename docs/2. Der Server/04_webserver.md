@@ -27,7 +27,7 @@ Für die Zwecke dieses Tutorials ist es sinnvoll, dem anonymen Nutzer alle Recht
 === "Docker"
     Folgenden Befehl ausführen, um eine Konsole im Container zu erhalten:
     ```bash
-    docker exec -it rita-http /bin/sh
+    docker compose exec -it rita-http /bin/sh
     ```
 === "Manuelle Installation"
     In das Arbeitsverzeichnis wechseln, indem der Server liegt (selber Ordner, der auch `package.json` enthält)

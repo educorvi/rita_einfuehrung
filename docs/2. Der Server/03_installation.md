@@ -13,7 +13,6 @@ Dies kann entweder mit Docker oder mit einer manuellen Installation geschehen. N
     services:
         mysql:
             image: mysql:9
-            container_name: mysql
             environment:
                 MYSQL_RANDOM_ROOT_PASSWORD: 1
                 MYSQL_DATABASE: rita
@@ -24,7 +23,6 @@ Dies kann entweder mit Docker oder mit einer manuellen Installation geschehen. N
             depends_on:
                 - mysql
             image: ghcr.io/educorvi/rita-http:5-latest
-            container_name: rita-http
             environment:
                 WAIT_HOSTS: mysql:3306
                 PORT: 3000
