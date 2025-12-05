@@ -1,7 +1,7 @@
 # Vergleiche
 Bei Vergleichen werden, wie der Name schon vermuten lässt, die beiden Argumente miteinander verglichen und es wird ein entsprechender Wahrheitswert zurückgegeben. Verglichen werden können Zahlen, Strings und Datumsangaben. Mögliche Varianten sind
 
-* **equals:** Die beiden Argumente sind identisch
+* **equal:** Die beiden Argumente sind identisch
 * **greater:** Das erste Argument ist (lexikalisch) größer als das zweite
 * **smaller:** Das erste Argument ist (lexikalisch) kleiner als das zweite
 * **smallerOrEqual:** Das erste Argument ist (lexikalisch) kleiner als oder genauso groß wie das zweite
@@ -12,7 +12,7 @@ Bei Vergleichen werden, wie der Name schon vermuten lässt, die beiden Argumente
 ```json
 {
   "type": "comparison",
-  "operation": "equals" // (1),
+  "operation": "equal" // (1),
   "arguments": [
     // Die beiden zu vergleichenden Argumente
   ]
